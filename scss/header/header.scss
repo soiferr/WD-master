@@ -47,6 +47,18 @@
             font-weight: $medium;
         }
     }
+
+.right{
+    border: none;
+    width: 48px;
+    height: 48px;
+    background-image: url(../images/menu.svg);
+    background-size: cover;
+
+    &_active{
+        background-image: url(../images/closest.svg);
+    }
+}
 }
 
 .header {

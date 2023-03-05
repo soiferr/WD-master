@@ -10,7 +10,12 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="styles/main.css">
+
 </head>
 
 <body>
@@ -36,13 +41,20 @@
                 <img src="images/logo.svg" alt="Logotype">
             </a>
             <nav class="header__nav">
-                <ul>
-                    <li><a href="#" class="header__item header__item_active">Главная</a></li>
-                    <li><a href="#" class="header__item">Об авторе</a></li>
-                    <li><a href="#" class="header__item">Работы</a></li>
-                    <li><a href="#" class="header__item">Процесс</a></li>
-                    <li><a href="#" class="header__item">Контакты</a></li>
-                </ul>
+                <div class="wrapper">
+                    
+                    <button class="right "></button>
+                    <div class="menu-closest ">
+                        
+                        <ul>
+                            <li><a href="#" class="header__item header__item_active">Главная</a></li>
+                            <li><a href="#" class="header__item">Об авторе</a></li>
+                            <li><a href="#" class="header__item">Работы</a></li>
+                            <li><a href="#" class="header__item">Процесс</a></li>
+                            <li><a href="#" class="header__item">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -228,6 +240,33 @@
                 <img src="images/gallery-8.jpg" alt="">
             </a>
         </section>
+        <section class="partners">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/Group 2.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Group 3.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Group 4.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Group 5.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Group 6.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Group.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Vector (4).svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="wrapper">
@@ -246,9 +285,23 @@
     <div class="popup popup_forma" id="popup_forma">
         <div class="popup__body">
             <button class="popup__close"><img src="images/pop-img.svg" alt=""></button>
+            <div class="text">
+                <div class="top">
+                   <p><h2>Хотите веб-сайт?</h2></p> 
+                </div>
+                <div class="after">
+                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                         Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                    </p>
+                </div>
+                <div class="center"></div>
+            </div>
         </div>
     </div>
 
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

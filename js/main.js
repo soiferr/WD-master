@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", function () {
 
     let buttonsOpen = document.querySelectorAll("[data-popup]");
@@ -17,3 +19,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   
+  const swiper = new Swiper('.swiper',{
+    spaceBetween: 42,
+    slidesPerView: 4,
+    loop:true,
+  })
+
+const menuClosest = document.querySelector('.right');
+const menu = document.querySelector('.menu-closest');
+
+menuClosest.addEventListener('click', function(){
+  menu.classList.toggle('menu-closest-active');
+  menuClosest.classList.toggle('right_active');
+})

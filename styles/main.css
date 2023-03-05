@@ -407,6 +407,16 @@ h1, h2, h3, h4, h5, h6 {
   color: #34547A;
   font-weight: 500;
 }
+.header .right {
+  border: none;
+  width: 48px;
+  height: 48px;
+  background-image: url(../images/menu.svg);
+  background-size: cover;
+}
+.header .right_active {
+  background-image: url(../images/closest.svg);
+}
 
 @media (max-width: 768px) {
   .header {
@@ -789,8 +799,15 @@ h1, h2, h3, h4, h5, h6 {
   border: 0;
   background-color: transparent;
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 20px;
+  top: 20px;
+}
+
+.partners {
+  margin: 85px 0;
+}
+.partners .swiper {
+  width: 80%;
 }
 
 /*# sourceMappingURL=main.css.map */
